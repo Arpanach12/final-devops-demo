@@ -15,3 +15,6 @@
 
   - name: Deploy Custom Web Page
     copy: src=files/index.html dest=/var/www/html/
+
+  - name: Deploy Custom info Page
+    template: src=templates/info.j2 dest=/var/www/html/info.html
